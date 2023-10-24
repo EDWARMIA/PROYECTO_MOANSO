@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B5C0E691-8EDA-47C6-8FB1-EA682C8D8196}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PROYECTO_MOANSO</RootNamespace>
+    <AssemblyName>PROYECTO_MOANSO</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DATOS_CLIENTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATOS_CLIENTE.Designer.cs">
+      <DependentUpon>DATOS_CLIENTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="REGISTRO_EQUIPAJE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REGISTRO_EQUIPAJE.Designer.cs">
+      <DependentUpon>REGISTRO_EQUIPAJE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPROGRAMACIÓN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPROGRAMACIÓN.Designer.cs">
+      <DependentUpon>REPROGRAMACIÓN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RESERVACIÓN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RESERVACIÓN.Designer.cs">
+      <DependentUpon>RESERVACIÓN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SELECCIÓN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SELECCIÓN.Designer.cs">
+      <DependentUpon>SELECCIÓN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SUCURSALES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SUCURSALES.Designer.cs">
+      <DependentUpon>SUCURSALES.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DATOS_CLIENTE.resx">
+      <DependentUpon>DATOS_CLIENTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REGISTRO_EQUIPAJE.resx">
+      <DependentUpon>REGISTRO_EQUIPAJE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPROGRAMACIÓN.resx">
+      <DependentUpon>REPROGRAMACIÓN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RESERVACIÓN.resx">
+      <DependentUpon>RESERVACIÓN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SELECCIÓN.resx">
+      <DependentUpon>SELECCIÓN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SUCURSALES.resx">
+      <DependentUpon>SUCURSALES.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Airbnb-Logotipo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BUS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MUNDO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BUS2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BUS3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo cliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RESERV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EQUIPAJE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REPRO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SUCURSALES.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RESERV.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADVERTENCIA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TIPOEQUIPAJE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SUCURSA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TRUX AREQUIPA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TRUX CAJAMRAC.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TRUX-LIMA.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
